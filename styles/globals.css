@@ -8,14 +8,13 @@ body {
 }
 @layer components {
   .nt-bg {
-    background: linear-gradient(rgba(6, 6, 6, 0.897), rgba(0, 0, 0, 0.574)),
+    background: linear-gradient(rgba(6, 6, 6, 0.71), rgba(0, 0, 0, 0.574)),
       url(../components/img/netflixbg.jpg);
-    height: 700px;
+    height: 680px;
     object-fit: cover;
     width: 100%;
-    background-size: 75rem 400px;
+    background-size: 100% 780px;
     background-repeat: no-repeat;
-    background-size: cover;
   }
   .hero {
     width: 800px;
@@ -26,11 +25,23 @@ body {
     font-weight: 700;
     transform: translateX(50%);
     margin-top: 150px;
+    line-height: 1.1;
   }
   .watch {
     transform: translateX(50%);
     font-size: 1.625rem;
     max-width: 800px;
     font-weight: 400;
+  }
+  .ready {
+    transform: translateX(50%);
+    font-size: 1.2rem;
+  }
+  .email {
+    transform: translateX(50%);
+  }
+  .btn {
+    font-size: 1.875rem;
+    line-height: normal;
   }
 }
