@@ -39,8 +39,20 @@ function Home(): JSX.Element {
             players, and more.
           </p>
         </div>
-        <div className="bg-[url('../components/img/tv.png')] bg-cover h-[398px] w-[530.2px] mt-8 ml-7">
-          <video src=""></video>
+        <div className="bg-[url('../components/img/tv.png')] bg-cover h-[398px] w-[530.2px] mt-8 ml-7 z-10 relative">
+          <video
+            controls
+            width="384"
+            loop={true}
+            autoPlay={true}
+            className="mx-auto  mt-20 z-0 relative"
+          >
+            <source
+              src={"./demo.mp4"}
+              type="video/mp4"
+              className=" relative z-0"
+            />
+          </video>
         </div>
       </section>
     </main>
