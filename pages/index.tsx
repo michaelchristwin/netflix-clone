@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Home(): JSX.Element {
   return (
     <main className=" overflow-x-hidden">
@@ -39,20 +41,35 @@ function Home(): JSX.Element {
             players, and more.
           </p>
         </div>
-        <div className="bg-[url('../components/img/tv.png')] bg-cover h-[398px] w-[530.2px] mt-8 ml-7 z-10 relative">
+        <div className="bg-[url('../components/img/tv.png')] bg-cover h-[398px] w-[530.2px] mt-8 ml-7">
           <video
             controls
             width="384"
             loop={true}
             autoPlay={true}
-            className="mx-auto  mt-20 z-0 relative"
+            className="mx-auto  mt-20 -z-10 relative"
           >
-            <source
-              src={"./demo.mp4"}
-              type="video/mp4"
-              className=" relative z-0"
-            />
+            <source src={"./demo.mp4"} type="video/mp4" className="" />
+            <source src={"./demo.m4v"} type="video/m4v" className="" />
           </video>
+        </div>
+      </section>
+      <hr className="bg-[#222222] h-2 border-none" />
+      <section className="flex">
+        <div className=" bg-[url('../components/img/mobile.jpg')] h-[378.717px] bg-cover w-[504.967px] ml-36 mt-10 relative">
+          <div className="flex w-[330.167px] h-[104px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-20 bg-black">
+            <Image
+              src="/boxshot.png"
+              alt="boxshot"
+              width={57.15}
+              height={80}
+              className="ml-4"
+            />
+            <div className="mt-6 ml-4">
+              <p className="font-[700] font-sans text-[1em]">Stranger Things</p>
+              <span className="text-[#0071eb]">Downloading...</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
