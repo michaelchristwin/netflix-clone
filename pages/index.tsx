@@ -69,7 +69,22 @@ function Home(): JSX.Element {
               <p className="font-[700] font-sans text-[1em]">Stranger Things</p>
               <span className="text-[#0071eb]">Downloading...</span>
             </div>
+            <Image
+              src={"/downloading.gif"}
+              alt="downloading"
+              height={0}
+              width={0}
+              className="h-[48px] w-[60px] mt-6 ml-10"
+            />
           </div>
+        </div>
+        <div className="ml-28 mt-40 w-[547.033px]">
+          <p className="text-[3.125rem] font-[700]">
+            Download your shows to watch offline.
+          </p>
+          <p className=" text-[1.625rem] font-[400]">
+            Save your favorites easily and always have something to watch.
+          </p>
         </div>
       </section>
     </main>
