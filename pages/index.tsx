@@ -55,7 +55,7 @@ function Home(): JSX.Element {
         </div>
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
-      <section className="flex">
+      <section className="flex mb-5">
         <div className=" bg-[url('../components/img/mobile.jpg')] h-[378.717px] bg-cover w-[504.967px] ml-36 mt-10 relative">
           <div className="flex w-[330.167px] h-[104px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-20 bg-black">
             <Image
@@ -74,7 +74,7 @@ function Home(): JSX.Element {
               alt="downloading"
               height={0}
               width={0}
-              className="h-[48px] w-[60px] mt-6 ml-10"
+              className="h-[48px] w-[50px] mt-6 ml-10"
             />
           </div>
         </div>
@@ -82,11 +82,22 @@ function Home(): JSX.Element {
           <p className="text-[3.125rem] font-[700]">
             Download your shows to watch offline.
           </p>
-          <p className=" text-[1.625rem] font-[400]">
+          <p className="text-[1.625rem] font-[400]">
             Save your favorites easily and always have something to watch.
           </p>
         </div>
       </section>
+      <hr className="bg-[#222222] h-2 border-none" />
+      <div>
+        <div className="ml-[200px] my-[60px] w-[547px]">
+          <p className="text-[3.125rem] font-[700]">Watch everywhere.</p>
+          <p className="text-[1.625rem] font-[400] font-sans">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+      </div>
+      <hr className="bg-[#222222] h-2 border-none" />
     </main>
   );
 }
