@@ -44,4 +44,17 @@ body {
     font-size: 1.875rem;
     line-height: normal;
   }
+  .faq-card,
+  .svg-closed {
+    transform: translateY(-50%) rotate(-45deg) !important;
+  }
+  .faq-card,
+  .svg-icon-thin-x {
+    fill: white;
+    height: 1.7em;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    width: 1.7em;
+  }
 }

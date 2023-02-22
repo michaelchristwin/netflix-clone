@@ -1,3 +1,4 @@
+import Faqs from "@/components/Faqs";
 import Image from "next/image";
 
 function Home(): JSX.Element {
@@ -89,7 +90,7 @@ function Home(): JSX.Element {
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
       <div>
-        <div className="ml-[200px] my-[60px] w-[547px]">
+        <div className="ml-[200px] my-[40px] w-[547px]">
           <p className="text-[3.125rem] font-[700]">Watch everywhere.</p>
           <p className="text-[1.625rem] font-[400] font-sans">
             Stream unlimited movies and TV shows on your phone, tablet, laptop,
@@ -98,6 +99,20 @@ function Home(): JSX.Element {
         </div>
       </div>
       <hr className="bg-[#222222] h-2 border-none" />
+      <section className="flex py-14 ml-48">
+        <Image src={"/kids.png"} alt="Kids" width={504} height={378} />
+        <div className="w-[547px] mt-[100px] ml-14">
+          <p className="text-[3.025rem] font-[600]">
+            Create profiles for kids.
+          </p>
+          <p className="text-[1.625rem] font-[400] font-sans">
+            Send kids on adventures with their favorite characters in a space
+            made just for them—free with your membership.
+          </p>
+        </div>
+      </section>
+      <hr className="bg-[#222222] h-2 border-none" />
+      <Faqs />
     </main>
   );
 }
