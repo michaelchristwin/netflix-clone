@@ -1,7 +1,17 @@
 import Faqs from "@/components/Faqs";
 import Image from "next/image";
+import AllFaqs from "@/components/faqs";
 
 function Home(): JSX.Element {
+  const TheFaqs = AllFaqs.map((items) => {
+    return (
+      <Faqs
+        question={items.question}
+        answer={items.answer}
+        key={items.question}
+      />
+    );
+  });
   return (
     <main className=" overflow-x-hidden">
       <section className="nt-bg">
@@ -112,7 +122,12 @@ function Home(): JSX.Element {
         </div>
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
-      <Faqs />
+      <section className=" bg-black py-14">
+        <p className="text-[3.025rem] font-[600] text-center">
+          Frequently Asked Questions
+        </p>
+        {TheFaqs}
+      </section>
     </main>
   );
 }
