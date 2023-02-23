@@ -1,6 +1,7 @@
 import Faqs from "@/components/Faqs";
 import Image from "next/image";
 import AllFaqs from "@/components/faqs";
+import { useState } from "react";
 
 function Home(): JSX.Element {
   const TheFaqs = AllFaqs.map((items) => {
@@ -8,7 +9,8 @@ function Home(): JSX.Element {
       <Faqs
         question={items.question}
         answer={items.answer}
-        key={items.question}
+        key={items.id}
+        id={items.id}
       />
     );
   });

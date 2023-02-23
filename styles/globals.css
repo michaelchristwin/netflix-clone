@@ -48,6 +48,9 @@ body {
   .svg-closed {
     transform: translateY(-50%) rotate(-45deg) !important;
   }
+  .svg-open {
+    transform: translateY(-50%) rotate(0deg) !important;
+  }
   .faq-card,
   .svg-icon-thin-x {
     fill: white;
