@@ -40,7 +40,7 @@ function Faqs({ answer, question, id }: Faq) {
       </div>
       <div
         className={`w-[865px] bg-[#303030] py-3 mx-auto px-9 relative mt-1 text-[1.625rem] font-[400] ${
-          open == id && show ? "block" : "hidden"
+          show ? "block" : "hidden"
         }`}
       >
         {answer}
