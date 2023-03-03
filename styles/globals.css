@@ -7,6 +7,20 @@ body {
   color: white;
 }
 @layer components {
+  @media (min-width: 640px) {
+    .nt-bg {
+      background-image: linear-gradient(
+          rgba(4, 4, 4, 0.9),
+          rgba(0, 0, 0, 0.505),
+          rgba(6, 6, 6, 0.921)
+        ),
+        url(../components/img/netflixbg.jpg);
+      height: 680px;
+      object-fit: cover;
+      background-size: 100% 472px !important;
+      background-repeat: no-repeat !important;
+    }
+  }
   .nt-bg {
     background-image: linear-gradient(
         rgba(4, 4, 4, 0.9),
@@ -14,28 +28,13 @@ body {
         rgba(6, 6, 6, 0.921)
       ),
       url(../components/img/netflixbg.jpg);
-    height: 680px;
-    object-fit: cover;
-    background-size: 100% 780px;
-    background-repeat: no-repeat;
   }
   .hero {
     width: 800px;
   }
   .hero-t {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
-    margin-top: 150px;
     line-height: 1.1;
-  }
-  .watch {
-    font-size: 1.625rem;
-    max-width: 800px;
-    font-weight: 400;
-  }
-  .ready {
-    font-size: 1.2rem;
   }
   .email {
     max-width: 100%;

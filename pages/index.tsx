@@ -16,20 +16,26 @@ function Home(): JSX.Element {
   });
   return (
     <main className=" overflow-x-hidden">
-      <section className="nt-bg">
+      <section className="nt-bg bg-no-repeat bg-[length:100%_780px] lg:h-[680px] h-[472px]">
         <div className="flex justify-between pt-7">
-          <p className="text-red-600 text-5xl font-extrabold ml-10">NETFLIX</p>
+          <p className="text-red-600  lg:font-extrabold lg:text-5xl text-[20px] font-[600] ml-10">
+            NETFLIX
+          </p>
           <button className="bg-red-600 text-white w-20 rounded h-9 px-2 float-right mr-8">
             Sign in
           </button>
         </div>
         <div className="block hero w-full">
-          <p className="hero-t block text-center">Unlimited movies, TV</p>
-          <p className="hero-t block text-center mt-0">shows, and more.</p>
-          <p className="text-center block watch mx-auto">
+          <p className="hero-t block text-center lg:mt-[150px] mt-[70px] lg:text-[4rem] text-[1.75rem] lg:font-[700] font-[600]">
+            Unlimited movies, TV
+          </p>
+          <p className="hero-t block text-center mt-0 lg:text-[4rem] lg:font[700] text-[1.75rem] lg:font-[700] font-[600]">
+            shows, and more.
+          </p>
+          <p className="text-center block mx-auto lg:text-[1.725rem] lg:mt-0 mt-[15px] font-[500] lg:max-w-[800px] max-w-[680px]">
             Watch anywhere. Cancel anytime.
           </p>
-          <p className="ready text-center pt-5 pb-10 font-normal">
+          <p className="lg:text-center pt-5 pb-10 font-normal lg:text-[1.2rem] lg:w-full w-[345px] block mx-auto text-[18px]">
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
