@@ -39,28 +39,30 @@ function Home(): JSX.Element {
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
-          <div className="flex justify-center">
+          <div className="block lg:flex lg:justify-center">
             <input
               type="text"
-              className="block w-[530px] h-[70px] pl-2 border"
+              className="block w-[73%] lg:w-[530px] h-[48px] lg:h-[70px] pl-2 border bg-transparent lg:bg-white mx-auto lg:mx-0"
               placeholder="Email address"
             />
-            <button className="block bg-red-600 px-2 w-[244px] hover:bg-[#f40612] btn">
+            <button className="block bg-red-600 px-2 w-[152px] lg:w-[244px] hover:bg-[#f40612] btn text-[1.12rem] lg:text-[1.87rem] mx-auto lg:mx-0 mt-2 lg:mt-0 h-[48px] lg:h-[70px] rounded lg:rounded-none">
               Get Started
             </button>
           </div>
         </div>
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
-      <section className="flex">
-        <div className="w-[548px] ml-[15%] my-40">
-          <p className="text-[3.125rem] font-[600]">Enjoy on your TV.</p>
-          <p className="text-[1.625rem] font-sans">
+      <section className="lg:flex block">
+        <div className="lg:w-[548px] lg:ml-[15%] lg:my-40 w-[100%] ml-0 my-20">
+          <p className="lg-text-[3.125rem] text-[2rem] font-[600] lg:text-left text-center">
+            Enjoy on your TV.
+          </p>
+          <p className="text-[1.125rem] lg:text-[1.625rem] font-sans text-center lg:text-left">
             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
             players, and more.
           </p>
         </div>
-        <div className="bg-[url('../components/img/tv.png')] bg-cover h-[398px] w-[530.2px] mt-8 ml-7">
+        <div className="bg-[url('../components/img/tv.png')] lg:bg-cover h-[275px] lg:w-[530.2px] mt-8 ml-7 bg-[length:100%_280px] mb-9">
           <video
             controls
             width="384"

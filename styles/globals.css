@@ -7,17 +7,17 @@ body {
   color: white;
 }
 @layer components {
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
     .nt-bg {
       background-image: linear-gradient(
           rgba(4, 4, 4, 0.9),
           rgba(0, 0, 0, 0.505),
           rgba(6, 6, 6, 0.921)
         ),
-        url(../components/img/netflixbg.jpg);
+        url(../public/sm-bg.jpg) !important;
       height: 680px;
-      object-fit: cover;
-      background-size: 100% 472px !important;
+      object-fit: none !important;
+      background-size: 150% 502px !important;
       background-repeat: no-repeat !important;
     }
   }
