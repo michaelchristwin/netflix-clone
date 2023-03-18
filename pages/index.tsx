@@ -76,18 +76,20 @@ function Home(): JSX.Element {
         </div>
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
-      <section className="flex mb-5">
-        <div className=" bg-[url('../components/img/mobile.jpg')] h-[378.717px] bg-cover w-[504.967px] ml-36 mt-10 relative">
-          <div className="flex w-[330.167px] h-[104px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-20 bg-black">
+      <section className="lg:flex lg:pb-5 pb-10">
+        <div className="lg:block hidden bg-[url('../components/img/mobile.jpg')] lg:h-[378.717px] h-[252px] bg-cover w-[336px] lg:w-[504.967px] lg:ml-36 ml-0 mt-10 relative">
+          <div className="flex lg:w-[330.167px] w-[264px] lg:h-[104px] h-[64px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-20 bg-black">
             <Image
               src="/boxshot.png"
               alt="boxshot"
               width={57.15}
-              height={80}
-              className="ml-4"
+              height={83}
+              className="lg:ml-4 ml-2 lg:h-[80px] lg:w-[57.15px]"
             />
-            <div className="mt-6 ml-4">
-              <p className="font-[700] font-sans text-[1em]">Stranger Things</p>
+            <div className="mt-0 lg:mt-6 ml-4">
+              <p className="font-[700] font-sans lg:text-[1em] text-[0.8em] ">
+                Stranger Things
+              </p>
               <span className="text-[#0071eb]">Downloading...</span>
             </div>
             <Image
@@ -95,17 +97,42 @@ function Home(): JSX.Element {
               alt="downloading"
               height={0}
               width={0}
-              className="h-[48px] w-[50px] mt-6 ml-10"
+              className="h-[48px] w-[50px] mt-2 lg:mt-6 ml-4 lg:ml-10"
             />
           </div>
         </div>
-        <div className="ml-28 mt-40 w-[547.033px]">
-          <p className="text-[3.125rem] font-[700]">
+        <div className="ml-0 lg:ml-28 lg:mt-40 mt-10 w-[100%] lg:w-[547.033px] lg:text-left text-center">
+          <p className="text-[1.7rem] lg:text-[3.125rem] font-[700] lg:text-left">
             Download your shows to watch offline.
           </p>
-          <p className="text-[1.625rem] font-[400]">
+          <p className="text-[1.125rem] lg:text-[1.625rem] font-[400]">
             Save your favorites easily and always have something to watch.
           </p>
+        </div>
+        {/* For mobile interface */}
+        <div className="lg:hidden block bg-[url('../components/img/mobile.jpg')] lg:h-[378.717px] h-[252px] bg-cover w-[336px] lg:w-[504.967px] lg:ml-36 ml-0 mb-10 relative">
+          <div className="flex lg:w-[330.167px] w-[264px] lg:h-[104px] h-[64px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-10 bg-black">
+            <Image
+              src="/boxshot.png"
+              alt="boxshot"
+              width={57.15}
+              height={83}
+              className="lg:ml-4 ml-2 lg:h-[80px] lg:w-[57.15px]"
+            />
+            <div className="mt-0 lg:mt-6 ml-4">
+              <p className="font-[700] font-sans lg:text-[1em] text-[0.8em] ">
+                Stranger Things
+              </p>
+              <span className="text-[#0071eb]">Downloading...</span>
+            </div>
+            <Image
+              src={"/downloading.gif"}
+              alt="downloading"
+              height={0}
+              width={0}
+              className="h-[48px] w-[50px] mt-2 lg:mt-6 ml-4 lg:ml-10"
+            />
+          </div>
         </div>
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
