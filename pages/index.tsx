@@ -110,7 +110,7 @@ function Home(): JSX.Element {
           </p>
         </div>
         {/* For mobile interface */}
-        <div className="lg:hidden block bg-[url('../components/img/mobile.jpg')] lg:h-[378.717px] h-[252px] bg-cover w-[336px] lg:w-[504.967px] lg:ml-36 ml-0 mb-10 relative">
+        <div className="lg:hidden block bg-[url('../components/img/mobile.jpg')] lg:h-[378.717px] h-[252px] bg-cover w-[336px] lg:w-[504.967px] lg:ml-36 mx-auto mb-10 relative">
           <div className="flex lg:w-[330.167px] w-[264px] lg:h-[104px] h-[64px] rounded-[0.75em] border-[hsla(0,0%,100%,.25)] border-2 absolute top-60 left-10 bg-black">
             <Image
               src="/boxshot.png"
@@ -137,26 +137,41 @@ function Home(): JSX.Element {
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
       <div>
-        <div className="ml-[200px] my-[40px] w-[547px]">
-          <p className="text-[3.125rem] font-[700]">Watch everywhere.</p>
-          <p className="text-[1.625rem] font-[400] font-sans">
+        <div className="mx-auto lg:ml-[200px] my-[40px] lg:w-[547px] w-[100%]">
+          <p className="lg:text-[3.125rem] text-[2rem] lg:font-[700] font-[600] text-center">
+            Watch everywhere.
+          </p>
+          <p className="text-[1.225rem] lg:text-[1.625rem] font-[400] font-sans text-center">
             Stream unlimited movies and TV shows on your phone, tablet, laptop,
             and TV.
           </p>
         </div>
       </div>
       <hr className="bg-[#222222] h-2 border-none" />
-      <section className="flex py-14 ml-48">
-        <Image src={"/kids.png"} alt="Kids" width={504} height={378} />
-        <div className="w-[547px] mt-[100px] ml-14">
-          <p className="text-[3.025rem] font-[600]">
+      <section className="lg:flex block py-14 lg:ml-48 ml-0">
+        <Image
+          src={"/kids.png"}
+          alt="Kids"
+          width={504}
+          height={378}
+          className="lg:block hidden"
+        />
+        <div className="lg:w-[547px] w-[90%] mt-[100px] lg:ml-14 mx-auto">
+          <p className="lg:text-[3.025rem] font-[600] text-[2rem] lg:text-left text-center">
             Create profiles for kids.
           </p>
-          <p className="text-[1.625rem] font-[400] font-sans">
+          <p className="lg:text-[1.625rem] lg:text-left text-center text-[1.225rem] font-[400] font-sans">
             Send kids on adventures with their favorite characters in a space
             made just for them—free with your membership.
           </p>
         </div>
+        <Image
+          src={"/kids.png"}
+          alt="Kids"
+          width={504}
+          height={378}
+          className="lg:hidden block"
+        />
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
       <section className=" bg-black py-14">
