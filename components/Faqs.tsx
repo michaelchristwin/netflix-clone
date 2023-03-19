@@ -18,19 +18,19 @@ function Faqs({ answer, question, id }: Faq) {
   return (
     <div>
       <div
-        className="w-[865px] bg-[#303030] h-[75px] mx-auto px-9 relative mt-2"
+        className="lg:w-[865px] w-[90%] bg-[#303030] lg:h-[75px] h-[71px] mx-auto px-9 relative mt-2"
         onClick={() => {
           myShow();
           toggleOpen(id);
         }}
       >
-        <p className="text-[1.725rem] font-[500] font-sans text-left block pt-5">
+        <p className="lg:text-[1.725rem] text-[1.2rem] font-[500] font-sans text-left block pt-5">
           {question}
         </p>
         <svg
           id="thin-x"
           viewBox="0 0 26 26"
-          className={`svg-icon svg-icon-thin-x  ${
+          className={`svg-icon svg-icon-thin-x lg:h-[20px] lg:w-[20px] h-[16px] w-[16px] ${
             show ? "svg-open" : "svg-closed"
           }`}
           focusable="true"

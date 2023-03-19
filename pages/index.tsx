@@ -62,13 +62,12 @@ function Home(): JSX.Element {
             players, and more.
           </p>
         </div>
-        <div className="bg-[url('../components/img/tv.png')] lg:bg-cover h-[275px] lg:w-[530.2px] mt-8 ml-7 bg-[length:100%_280px] mb-9">
+        <div className="bg-[url('../components/img/tv.png')] lg:bg-cover h-[275px] lg:h-[355px] lg:w-[530.2px] w-[336px] mt-8  ml-7 bg-[length:100%_280px] mb-12">
           <video
             controls
-            width="384"
             loop={true}
             autoPlay={true}
-            className="mx-auto  mt-20 -z-10 relative"
+            className="mx-auto lg:w-[384px] w-[280px] lg:mt-14 -z-10 relative h-[275px] lg:h-[355px]"
           >
             <source src={"./demo.mp4"} type="video/mp4" className="" />
             <source src={"./demo.m4v"} type="video/m4v" className="" />
@@ -175,7 +174,7 @@ function Home(): JSX.Element {
       </section>
       <hr className="bg-[#222222] h-2 border-none" />
       <section className=" bg-black py-14">
-        <p className="text-[3.025rem] font-[600] text-center">
+        <p className="lg:text-[3.025rem] text-[2rem] font-[600] text-center">
           Frequently Asked Questions
         </p>
         {TheFaqs}
