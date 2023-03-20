@@ -39,7 +39,7 @@ function Faqs({ answer, question, id }: Faq) {
         </svg>
       </div>
       <div
-        className={`w-[865px] bg-[#303030] py-3 mx-auto px-9 relative mt-1 text-[1.625rem] font-[400] ${
+        className={`lg:w-[865px] w-[90%] bg-[#303030] py-3 mx-auto px-9 relative mt-1 lg:text-[1.625rem] text-[1.2rem] font-[400] ${
           show ? "block" : "hidden"
         }`}
       >

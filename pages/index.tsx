@@ -42,10 +42,10 @@ function Home(): JSX.Element {
           <div className="block lg:flex lg:justify-center">
             <input
               type="text"
-              className="block w-[73%] lg:w-[530px] h-[48px] lg:h-[70px] pl-2 border bg-transparent lg:bg-white mx-auto lg:mx-0"
+              className="block w-[73%] lg:w-[376px] h-[48px] lg:h-[56px] pl-2 border border-[#959494] bg-transparent mx-auto lg:ml-0 lg:mr-2 rounded"
               placeholder="Email address"
             />
-            <button className="block bg-red-600 px-2 w-[152px] lg:w-[244px] hover:bg-[#f40612] btn text-[1.12rem] lg:text-[1.87rem] mx-auto lg:mx-0 mt-2 lg:mt-0 h-[48px] lg:h-[70px] rounded lg:rounded-none">
+            <button className="block bg-red-600 px-2 w-[152px] lg:w-[244px] hover:bg-[#f40612] btn text-[1.12rem] lg:text-[1.87rem] mx-auto lg:mx-0 mt-2 lg:mt-0 h-[48px] lg:h-[56px] rounded">
               Get Started
             </button>
           </div>
@@ -179,6 +179,49 @@ function Home(): JSX.Element {
         </p>
         {TheFaqs}
       </section>
+      <div className="mb-14">
+        <p className="lg:text-center font-[400] lg:text-[1.25rem] lg:w-full w-[250px] text-center lg:mx-0 mx-auto">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div className="block lg:flex lg:justify-center mt-3">
+          <input
+            type="text"
+            className="block w-[73%] lg:w-[376px] h-[48px] lg:h-[56px] border-[#959494] pl-2 border bg-transparent mx-auto lg:mr-2 lg:ml-0 rounded"
+            placeholder="Email address"
+          />
+          <button className="block bg-red-600 px-2 w-[152px] lg:w-[244px] hover:bg-[#f40612] btn text-[1.12rem] lg:text-[1.87rem] mx-auto lg:mx-0 mt-2 lg:mt-0 h-[48px] lg:h-[56px] rounded">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <hr className="bg-[#222222] h-2 border-none" />
+      <footer className="pt-10">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3 w-full ml-3 text-gray-400">
+          <ul>
+            <li>Questions? Contact us</li>
+            <li className="mt-4">FAQ</li>
+            <li>Account</li>
+            <li>Jobs</li>
+            <li>Privacy</li>
+            <li>Contact Us</li>
+            <li>Only on Netflix</li>
+          </ul>
+          <ul>
+            <li>Gift Card Terms</li>
+            <li>Media Center</li>
+            <li>Ways to Watch</li>
+            <li>Cookie Preferences</li>
+            <li>Speed Test</li>
+          </ul>
+          <ul>
+            <li>Help Center</li>
+            <li>Investor Relations</li>
+            <li>Terms of Use</li>
+            <li>Corporate Information</li>
+            <li>Legal Notices</li>
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }
