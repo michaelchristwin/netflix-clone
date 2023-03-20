@@ -67,7 +67,7 @@ function Home(): JSX.Element {
             controls
             loop={true}
             autoPlay={true}
-            className="mx-auto lg:w-[384px] w-[280px] lg:mt-14 -z-10 relative h-[275px] lg:h-[355px]"
+            className="mx-auto lg:w-[384px] w-[280px] lg:mt-0 -z-10 relative h-[275px] lg:h-[370px]"
           >
             <source src={"./demo.mp4"} type="video/mp4" className="" />
             <source src={"./demo.m4v"} type="video/m4v" className="" />
