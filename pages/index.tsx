@@ -1,7 +1,7 @@
 import Faqs from "@/components/Faqs";
 import Image from "next/image";
 import AllFaqs from "@/components/faqs";
-import { useState } from "react";
+import Head from "next/head";
 
 function Home(): JSX.Element {
   const TheFaqs = AllFaqs.map((items) => {
@@ -16,6 +16,13 @@ function Home(): JSX.Element {
   });
   return (
     <main className=" overflow-x-hidden">
+      <Head>
+        <title>Netflix Clone</title>
+        <meta
+          name="description"
+          content="This is a reponsive clone of the official Netflix Homepage"
+        />
+      </Head>
       <section className="nt-bg bg-no-repeat bg-[length:100%_780px] lg:h-[680px] h-[472px]">
         <div className="flex justify-between pt-7">
           <p className="text-red-600  lg:font-extrabold lg:text-5xl text-[20px] font-[600] ml-10">
