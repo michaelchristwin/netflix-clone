@@ -22,6 +22,7 @@ function Home(): JSX.Element {
           name="description"
           content="This is a reponsive clone of the official Netflix Homepage"
         />
+        <meta name="robots" content="index, nofollow" />
       </Head>
       <section className="nt-bg bg-no-repeat bg-[length:100%_780px] lg:h-[680px] h-[472px]">
         <div className="flex justify-between pt-7">
@@ -71,13 +72,13 @@ function Home(): JSX.Element {
         </div>
         <div className="bg-[url('../components/img/tv.png')] lg:bg-cover h-[275px] lg:h-[355px] lg:w-[530.2px] w-[336px] mt-8  ml-7 bg-[length:100%_280px] mb-12">
           <video
-            controls
+            controls={true}
             loop={true}
             autoPlay={true}
             className="mx-auto lg:w-[384px] w-[280px] lg:mt-0 -z-10 relative h-[275px] lg:h-[370px]"
           >
-            <source src={"./demo.mp4"} type="video/mp4" className="" />
-            <source src={"./demo.m4v"} type="video/m4v" className="" />
+            <source src={"./demo.mp4"} type="video/mp4" />
+            <source src={"./demo.m4v"} type="video/m4v" />
           </video>
         </div>
       </section>
