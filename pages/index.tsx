@@ -2,6 +2,7 @@ import Faqs from "@/components/Faqs";
 import Image from "next/image";
 import AllFaqs from "@/components/faqs";
 import Head from "next/head";
+import Link from "next/link";
 
 function Home(): JSX.Element {
   const TheFaqs = AllFaqs.map((items) => {
@@ -29,9 +30,11 @@ function Home(): JSX.Element {
           <p className="text-red-600  lg:font-extrabold lg:text-5xl text-[20px] font-[600] ml-10">
             NETFLIX
           </p>
-          <button className="bg-red-600 text-white w-20 rounded h-9 px-2 float-right mr-8">
-            Sign in
-          </button>
+          <Link href={"/login"}>
+            <button className="bg-red-600 hover:bg-red-700 text-white w-20 rounded h-9 px-2 float-right mr-8">
+              Sign in
+            </button>
+          </Link>
         </div>
         <div className="block hero w-full">
           <p className="hero-t block text-center lg:mt-[150px] mt-[70px] lg:text-[4rem] text-[1.75rem] lg:font-[700] font-[600]">
