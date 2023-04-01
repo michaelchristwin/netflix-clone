@@ -1,7 +1,8 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import axios from "axios";
+import Head from "next/head";
 
-interface NewUser {
+export interface NewUser {
   email: string;
   passwordHash: string;
 }
@@ -32,6 +33,11 @@ function Login() {
   }
   return (
     <main>
+      <Head>
+        <title>Login</title>
+        <meta name="description" content="Login Page" />
+        <meta name="robots" content="index, nofollow" />
+      </Head>
       <section className="nt-bg bg-no-repeat lg:bg-[length:100%_100%] h-[100vh]">
         <div className="flex justify-between pt-7">
           <p className="text-red-600  lg:font-extrabold lg:text-5xl text-[20px] font-[600] ml-10">
