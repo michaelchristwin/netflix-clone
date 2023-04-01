@@ -18,7 +18,11 @@ function Login() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/api/users", user)
+      .post("http://127.0.0.1:8000/api/users/", JSON.stringify(user), {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
 
       .then((res) => {
         setUser({
