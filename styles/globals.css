@@ -21,6 +21,9 @@ body {
       background-repeat: no-repeat !important;
     }
   }
+  .ease999 {
+    transform: translateY(-1.5rem) scale(0.75);
+  }
   .nt-bg {
     background-image: linear-gradient(
         rgba(4, 4, 4, 0.9),

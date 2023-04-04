@@ -63,14 +63,23 @@ function Login() {
             placeholder="Email or Phone number"
             className="block w-[314px] h-[50px] rounded mx-auto pl-2 bg-[#333]"
           />
-          <input
-            value={user.passwordHash}
-            onChange={onchange}
-            name="passwordHash"
-            type="password"
-            placeholder="Password"
-            className="block mt-3 w-[314px] h-[50px] rounded mx-auto pl-2 bg-[#333]"
-          />
+          <div className="relative">
+            <input
+              value={user.passwordHash}
+              onChange={onchange}
+              name="passwordHash"
+              id="password"
+              type="password"
+              placeholder=""
+              className="block mt-8 w-[314px] h-[50px] rounded mx-auto pl-2 bg-[#333] placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            />
+            <label
+              htmlFor="password"
+              className="ease999 absolute left-20 top-[10px] transition-all duration-100 ease-in-out origin-0 text-[#cfceceec]"
+            >
+              Password
+            </label>
+          </div>
           <button
             type="submit"
             className="bg-red-600 block w-[314px] h-[50px] rounded mx-auto mt-9 hover:bg-red-700"
