@@ -80,6 +80,25 @@ function Login() {
           >
             Sign In
           </button>
+          <div className="flex mx-auto justify-between mt-5 w-[314px]">
+            <div className="flex w-fit">
+              <input
+                type="checkbox"
+                className="block mr-1 accent-[#646464] h-[20px]"
+              />
+              <p className="text-[#979494]">Remember Me</p>
+            </div>
+            <p className="text-[#949090]">Need help?</p>
+          </div>
+          <div className="text-[#646464] w-[314px] mx-auto mt-16">
+            New to Netflix?{" "}
+            <span className="hover:underline text-white">Sign Up now.</span>
+            <p className="text-[#949090] text-[13px]">
+              This page is protected by Google reCAPTCHA to ensure you`re not a
+              bot.
+              <span className="text-blue-600 hover:underline"> Learn more</span>
+            </p>
+          </div>
         </form>
       </section>
     </main>
